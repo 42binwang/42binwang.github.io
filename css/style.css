@@ -19,6 +19,7 @@ blockquote p{margin:0;padding:0;}
 #container{width:600px;margin:2em auto;display:block;padding:0 2em;}
 .content{font-size:120%;line-height:24px;}
 .content img{max-width:600px;display:block;margin:4px auto;-webkit-box-shadow:#999 1px 1px 4px;-moz-box-shadow:#999 1px 1px 4px;box-shadow:#999 1px 1px 4px;}
+article {min-height: 42em;}
 header{padding:.5em 0;border-bottom: 1px solid #cccccc;}
 nav{font-family:"Electrolize",sans-serif;font-size:1em;text-transform:uppercase;float:left;margin-left:-12em; width:6em;}
 nav a{display:block;padding:.7em 1em;color:#000000;}

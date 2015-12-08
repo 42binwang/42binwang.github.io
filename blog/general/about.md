@@ -69,4 +69,4 @@ The prefix number 42 of my domain name is originated from [The Hitchhiker's Guid
 ---
 
 This is just a [Github Pages](https://pages.github.com/) based single-page blog for self entertainment.
-The style is borrowed from [Yihui](yihui.name) & [arrowrowe](http://arrowrowe.me/), and use [vue.js](http://vuejs.org/), [jQuery](http://jquery.com/), [animate.css](http://daneden.me/animate) for frontend.
+The style is borrowed from [Yihui](http://yihui.name) & [arrowrowe](http://arrowrowe.me/), and use [vue.js](http://vuejs.org/), [jQuery](http://jquery.com/), [animate.css](http://daneden.me/animate) for frontend.
