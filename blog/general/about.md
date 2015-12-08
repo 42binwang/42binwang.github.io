@@ -3,9 +3,62 @@ About
 
 I am currently a senior student at [Jilin University](http://www.jlu.edu.cn), majoring in Computer Science, aiming to be a full stack engineer in my career.  ; -)
 
-Familiar with C, C++( 70% familiar with C++11 & C++14 ), Python(   Django, Web2py, TurboGears, Scrapy and etc. ), Java( lucene, Velocity, Spring, entry level of android programming & hadoop ), Scacle, C#( WPF ), Multiple threads( MPI, OpenMP, pthread ), Objective-c, swift, html, css, javascript, php and etc.
+__Professions__
+<div class="tag-panel">
+    <div class="tag expert">C</div>
+    <div class="tag expert">C++</div>
+    <div class="tag familiar">C++11</div>
+    <div class="tag familiar">C++14</div>
+    <div class="tag">Windows Api</div>
+</div>
+<div class="tag-panel">
+    <div class="tag expert">Python</div>
+    <div class="tag expert">Django</div>
+    <div class="tag expert">Web2py</div>
+    <div class="tag familiar">TurboGears</div>
+    <div class="tag">Scrapy</div>
+</div>
+<div class="tag-panel">
+    <div class="tag expert">Java</div>
+    <div class="tag expert">Lucene</div>
+    <div class="tag familiar">Velocity</div>
+    <div class="tag familiar">Spring</div>
+    <div class="tag">Android</div>
+</div>
+<div class="tag-panel">
+    <div class="tag expert">Multiplethreads</div>
+    <div class="tag expert">MPI</div>
+    <div class="tag familiar">OpenMP</div>
+    <div class="tag familiar">pthread</div>
+</div>
+<div class="tag-panel">
+    <div class="tag expert">C#</div>
+    <div class="tag familiar">WPF</div>
+    <div class="tag">ASP.NET</div>
+</div>
+<div class="tag-panel">
+    <div class="tag expert">Objective-C</div>
+    <div class="tag familiar">Swift</div>
+    <div class="tag">iOS</div>
+</div>
+<div class="tag-panel">
+    <div class="tag expert">Database</div>
+    <div class="tag expert">SQL</div>
+</div>
+<div class="tag-panel">
+    <div class="tag familiar">PHP</div>
+    <div class="tag familiar">CSS</div>
+    <div class="tag">Html5</div>
+    <div class="tag">Javascript</div>
+</div>
+<div class="tag-panel">
+    <div class="tag familiar">Scala</div>
+    <div class="tag">...</div>
+</div>
 
-I will pick some of my projects to put them on the Github in the following month. You can follow me on [this](https://github.com/42binwang?tab=repositories) if you are interested about them.
+__Announcement__
+
+I will put some of my projects on the Github in the following month. You can follow me on [this](https://github.com/42binwang?tab=repositories) if you are interested about them.
 
 __Why 42?__
 
@@ -15,4 +68,5 @@ The prefix number 42 of my domain name is originated from [The Hitchhiker's Guid
 
 ---
 
-This is just a single-page blog for self entertainment, and you can notice that I don't rent a dedicated server for it, while it is based on [Github Pages](https://pages.github.com/). 
+This is just a [Github Pages](https://pages.github.com/) based single-page blog for self entertainment.
+Style is borrowed from [Yihui](yihui.name) & [arrowrowe](http://arrowrowe.me/), use [vue.js](http://vuejs.org/), [jQuery](http://jquery.com/), [animate.css](http://daneden.me/animate).

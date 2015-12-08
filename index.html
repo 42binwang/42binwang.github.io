@@ -91,7 +91,7 @@
             $.get(transition.to.path.substr(1) + '.md', function (content) {
             router.app.content = content;
             Vue.nextTick(function () {
-                document.title = $('h1').text() + ' | Yesterday';
+                document.title = $('h1').text();
                 reload: true;
                 });
             });

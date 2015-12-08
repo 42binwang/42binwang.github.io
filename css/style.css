@@ -1,6 +1,7 @@
 /* ------------------------------------
- * @Edit by binwang for Personal Use
- * --------------------------------- */
+ * @author 42binwang
+ */
+
 
 @import url(http://fonts.googleapis.com/css?family=Galdeano);
 @import url(http://fonts.googleapis.com/css?family=Electrolize);
@@ -38,33 +39,7 @@ h1{padding:.5em 0;border-bottom: 1px solid #cccccc;}
 h2{font-family:"Cuprum",sans-serif;font-size:1.6em;color:#111;}
 h3{font-family:"Cuprum",sans-serif;font-size:1.2em;color:#222;}
 h4{font-family:"Cuprum",sans-serif;font-size:1em;color:#333;}
-#comments{padding-bottom: 10px;}
-.comment-list{list-style: none;}
-.comment-list p a{color: #B4461F;}
-.comment-list p a:hover{text-decoration: underline;}
-.comment-list li{margin: 0 0 25px;padding-bottom: 5px;border-bottom: 1px dashed #999;}
-.comment-children {margin-left: 20px;border-left: 2px solid #999;padding-left: 20px;}
-.comment-children li {padding-top: 25px;border-top: 1px dashed #999;border-bottom: none;}
-.avatar {float: right;margin: 5px 0 10px 10px;}
-.comment-author cite {font-weight: bold;font-style: normal;font-family:"Galdeano","Hiragino Sans GB", "Microsoft YaHei"}
-.comment-author cite:after {content:'';/*font-size: 12px;*/font-weight: normal;}
-.comment-meta {margin-bottom: 10px;font-family:"Electrolize",sans-serif;font-size: 12px;}
-.comment-meta a {font-weight: normal;color: #888;}
-.comment-reply {display: none;margin: 0 0 25px;font-size: 12px;}
-.comment-reply a {border: 1px solid #DDD;padding: 2px 10px;-moz-border-radius: 15px;-webkit-border-radius: 15px;}
-#cancel-comment-reply-link {margin-left: 10px;color: #090;}
-#comment-form {}
-#comment-form label {display: block;margin-bottom: 5px;font-weight: bold;}
-.comment-cloumn {float: left;width: 33%;}
-input.text,#comment-form textarea {border: 1px solid #BBB;padding: 5px;-moz-border-radius: 3px;-webkit-border-radius: 3px;}
-input.text:focus,#comment-form textarea:focus {border: 1px solid #999;-moz-box-shadow: 0 0 3px #999;}
-input.text {width:90%;}
-#comment-form textarea {width:98%;overflow:auto;}
-.submit-up{font-family:"Electrolize",sans-serif;font-size:1.1em; display: block; position: relative; background: #aaa; padding: 5px;  color: #fff; text-decoration: none; cursor: pointer; }
-.submit-up.pink{background: #333333;}
-.submit-up:hover{background-color: #a00; }
-.submit-up:active{background-color: #444; }
-#pageNav{text-align:center;height:30px;position:relative;}
-.page-navigator li{display:block;float:left;width:20px;margin-right:6px;}
-.page-navigator li a{display:block;float:left;width:20px;text-decoration:none;color:#666;}
-.page-navigator .current a{color:#f9f9f9;background:#dd0000;-moz-border-radius:10px;-webkit-border-radius:10px;}
+.tag-panel{margin:15px auto}
+.tag{background-color:#096254;color:#aee2d9;border-radius:3px;display:inline-block;padding:2px 8px;margin-right:3px;margin-bottom:3px;opacity:0.5}
+.tag.expert{opacity:1}
+.tag.familiar{opacity:0.75}
