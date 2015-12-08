@@ -76,6 +76,22 @@
     });
     </script>
     <script type="text/javascript">
+        var optionDisqus = window.optionDisqus = {
+                path: '',
+                title: ''
+            };
+        var initDisqus = window.initDisqus = function () {
+            ('DISQUS' in window) && DISQUS.reset({
+                reload: true,
+                config: function () {
+                    this.page.identifier = '42bin.wang/#!' + optionDisqus.path;
+                    this.page.url = window.location.href;
+                    this.page.title = optionDisqus.title;
+                }
+            });
+        };
+
+
         Vue.filter('marked', marked);
         var router = new VueRouter()
         router.map({
@@ -93,22 +109,15 @@
             $.get(transition.to.path.substr(1) + '.md', function (content) {
             router.app.content = content;
             Vue.nextTick(function () {
-                document.title = $('h1').text();
-                reload: true;
-                var disqus_config = function () {
-                this.page.url = window.location.href;
-                this.page.title = $('h1').text();
-                this.page.identifier = "42bin.wang/#!"+transition.to.path;
-                };
-                (function() { 
-                var d = document, s = d.createElement('script');
-                s.src = '//42binwang.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-                })();
-                });
+                optionDisqus.path = transition.to.path;
+                optionDisqus.title = $('h1').text();
+                document.title = optionDisqus.title;
+                initDisqus();
+
             });
         });
+    });
+    
         router.start(Vue.extend({
             data: function () {
                 return {
