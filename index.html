@@ -44,8 +44,8 @@
         </div>
     </div>
     <script type="text/javascript" src="/js/vue.min.js"></script>
-    <script type="text/javascript" src="/js/marked.min.js"></script>
     <script type="text/javascript" src="/js/vue-router.min.js"></script>
+    <script type="text/javascript" src="/js/marked.min.js"></script>
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script>
     $(document).ready(function (ev) {
@@ -74,7 +74,7 @@
         });
     });
     </script>
-    <script type="text/javascript">
+    <script>
         Vue.filter('marked', marked);
         var router = new VueRouter();
         router.map({
@@ -90,30 +90,20 @@
         });
         router.afterEach(function (transition) {
             $.get(transition.to.path.substr(1) + '.md', function (content) {
-            router.app.content = content;
-            Vue.nextTick(function () {
-                var optionDisqus = window.optionDisqus = {
-                path: '',
-                title: ''
-            };
-            var initDisqus = window.initDisqus = function () {
-                ('DISQUS' in window) && DISQUS.reset({
-                    reload: true,
-                    config: function () {
-                        this.page.identifier = '42bin.wang/#!' + optionDisqus.path;
-                        this.page.url = window.location.href;
-                        this.page.title = optionDisqus.title;
-                    }
+                router.app.content = content;
+                Vue.nextTick(function () {
+                    document.title = $('h1').text();
+                    ('DISQUS' in window) && DISQUS.reset({
+                        reload: true,
+                        config: function () {
+                            this.page.identifier = '42bin.wang/#!' + transition.to.path;
+                            this.page.url = window.location.href;
+                            this.page.title = $('h1').text();
+                        }
+                    });
                 });
-            };
-                optionDisqus.path = transition.to.path;
-                optionDisqus.title = $('h1').text();
-                document.title = optionDisqus.title;
-                initDisqus();
-
             });
         });
-    });
     
         router.start(Vue.extend({
             data: function () {
@@ -129,15 +119,6 @@
             }
         }), '.wrap');
     </script>
-    <script>
-    	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  		ga('create', 'UA-71222426-1', 'auto');
-  		ga('send', 'pageview');
-	</script>
-    <script type="text/javascript" src="//42binwang.disqus.com/embed.js"></script>
+    <script src="//42binwang.disqus.com/embed.js"></script>
 </body>
 </html>
