@@ -44,6 +44,7 @@ __Professions__
 <div class="tag-panel">
     <div class="tag expert">Database</div>
     <div class="tag expert">SQL</div>
+    <div class="tag expert">Sphinx</div>
 </div>
 <div class="tag-panel">
     <div class="tag familiar">PHP</div>
